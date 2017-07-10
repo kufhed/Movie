@@ -28,7 +28,7 @@ public class MovieApi {
     public void getTopRatedMovie(MovieApiInterface movieApiInterface){
         this.movieApiInterface = movieApiInterface;
         this.client = new OkHttpClient();
-        new AsyncPopularMovie().execute();
+        new AsyncTopRatedMovie().execute();
 
     }
 
